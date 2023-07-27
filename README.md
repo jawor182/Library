@@ -1,0 +1,1 @@
+Library is a project from THE ODIN PROJECT. Today i learned for fist time how to use OOP.
