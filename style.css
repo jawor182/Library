@@ -1,0 +1,126 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 5vh;
+    row-gap: 50px;
+}
+
+body,
+html {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.title {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#title {
+    font-size: 3em;
+    padding-top: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 2vh;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 200px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    border: 0;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+}
+
+.panel {
+    padding-left: 5%;
+    margin-left: 1vw;
+    border-left: 10px solid orange !important;
+    border-radius: 15px;
+    width: 40%;
+    background-color: lightgray;
+    position: relative;
+}
+
+.form {
+    margin-left: 1vh;
+}
+
+.remove {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.panel div {
+    line-height: 25px;
+}
+
+.panel input.read-toggle:checked {
+    background-color: lightblue;
+}
+
+.read-toggle {
+    margin-left: 10%;
+}
+
+/* Add this CSS to style the smaller "read-toggle" checkbox as a switch */
+.read-toggle {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+     margin: 0;
+     margin-left: 10%;
+     
+}
+
+.read-toggle::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+.read-toggle:checked::before {
+    transform: translateX(20px);
+}
+
+/* Optional: Change the background color when the switch is checked */
+.read-toggle:checked {
+    background-color: #5cb85c; /* Change to any other color you prefer */
+}
+.title{
+padding-left: 1vw;
+}
